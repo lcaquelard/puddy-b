@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="content" class="{{ current_page }}">
+        <h1 class="left">prêts à jouer à la rockstar ?</h1>
+        <div class="separator_red_h_l_line"></div>
+        <h2 class="left">emparez-vous du micro</h2>
+        <div class="separator_red_h_l_line"></div>
+        <p><span class="bold white">Imaginez</span>, vous êtes à bord de l'un de nos discobus Puddy-B, entouré(e) de vos proches. Vous parcourez les plus belles artères de la capitale <span class="bold white">avec à la main un micro pour chanter</span>.</p>
+        <p>Nous vous proposons un <span class="bold white">catalogue de milliers de titres</span> : rock, rap, disco, variété internationale ou française. Nos bus discothèques deviennent alors votre propre scène. <span class="bold white">Vos amis et votre famille sont votre public, Paris et ses monuments sont votre décor.</span></p>
+        <p><span class="bold white">Toutes nos formules comprennent gratuitement le karaoké</span>, ainsi vous pourrez passer de la soirée bus avec notre DJ au système karaoké embarqué quand ça vous chante !</p>
+        <div class="bottom_clickbox"><a href="{{ path("contact") }}"><div class="clickbox">contactez-nous !</div></a></div>
+    </div>
+{% endblock %}

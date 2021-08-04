@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div id="content" class="{{ current_page }}">
+    <h1>nos bus discothèques</h1>
+    <div class="separator_red_h_line"></div>
+    <h2>bus {{ n }}</h2>
+    <div class="separator_red_h_line"></div>
+    <div id="bus_slider">
+        <img src="/img/bus_11.jpg"/>
+        <img src="/img/bus_12.jpg"/>
+        <img src="/img/bus_13.jpg"/>
+        <img src="/img/bus_14.jpg"/>
+        <img src="/img/bus_15.jpg"/>
+    </div>
+    <h4><a href="{{ path('formules') }}">découvrez nos formules</a></h4>
+    <a href="{{ path('formules') }}"><div id="arrow_down"></div></a>
+</div>
+{% endblock %}

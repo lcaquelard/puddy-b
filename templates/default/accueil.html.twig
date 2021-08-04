@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="head_accueil"></div>
+    <div id="content" class="{{ current_page }}">
+        <h1>Bienvenue sur Puddy-B</h1>
+        <div class="separator_red_h_line"></div>
+        <h3>Lancé par Busdiscotheque pour le plus grand plaisir de tous.</h3>
+        <div class="separator_red_h_line"></div>
+        <p>Des nouveaux véhicules, un nouveau concept pour vous apporter toujours plus d’options, toujours plus de plaisirs.</p>
+        <p>Puddy-B.com ce sont des mini KARAOKES roulants et des mini discobus conçu pour un groupe maximum de 9 personnes à bord afin de profiter pleinement de moments joyeux en toutes intimités.</p>
+        <p>Tout est pensé pour votre plus grand plaisir et plus grand confort, avec notamment le Karaoké, les écrans plats, la sonorisation, les toilettes, les frigos, bar libre-service, jeux de lumières, tapis rouge, salon confortable etc…</p>
+        <p>Nous n’avons pas oublié non plus les gestes barrières, avec un personnel qui n’est pas au contact direct des clients disposant ainsi de l’intégralité de l’espace arrière.</p>
+        <p>De plus nous nous sommes attachés à vous offrir les meilleurs tarifs pour que nos bus karaokés soient accessible à tous sans lésiner une fois de plus sur les moyens ni les services.</p>
+        <p>En ces temps difficile il est important que tous puissent se libérer l’esprit et s’amuser pleinement sans se ruiner.</p>
+        <h4><a href="{{ path('nos_discobus') }}">découvrez nos discobus</a></h4>
+        <a href="{{ path('nos_discobus') }}"><div id="arrow_down"></div></a>
+    </div>
+{% endblock %}

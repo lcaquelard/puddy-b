@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="content" class="{{ current_page }}">
+        <h1 class="left">Les bus disco et discobus de Puddy-B</h1>
+        <div class="separator_grey_h_l_line"></div>
+        <div id="karaoke">
+            <p><a href="http://www.busdiscotheque.com">Busdiscotheque</a> possède un parc de <a href="http://www.busdiscotheque.com/?p=bus">8 discobus</a> intégralement dédiés à la privatisation pour vos sorties en soirée bus.</p>
+            <p>Puddy-B se lance dans cette activité en s’associant avec bus discothèque et en intégrant à leur parc de disco bus, 3 nouveaux bus discothèque haut de gamme capable de prendre les clients en région parisienne.</p>
+            <p>Les bus de busdiscotheque sont capables de recevoir jusqu’à 75 personnes à bord, ainsi en intégrant nos 3 bus disco qui ont une capacité individuelle de 34 personnes confortablement installés, nous étoffons notre offre de <a href="{{ path('services') }}">bus boite de nuit</a>.</p>
+            <p>Nous pouvons donc aisément organiser un transfert festif en discobus pour vos salariés par exemple lors d’un séminaire jusqu’à 100 personnes et si vous êtes plus nombreux en association avec busdiscotheque ce sont plus de 690 invités que Puddy-B et bus discotheque sont capables de transférer.</p>
+            <p>Enfin afin de garantir à chacun le plus grand confort et un maximum de sécurité nos discobus font l’objet de contrôle minutieux et d’entretiens très régulier. Bien qu’extrêmement attentif sur ce point, et parce que le risque zéro n’existe pas, en cas de problème Puddy-B en association avec busdiscotheque est capable de vous mettre à disposition <a href="http://www.busdiscotheque.com/?p=services_inclus">un bus discothèque de remplacement au plus tard en une heure</a>.</p>
+        </div>
+        <a href="{{ path('bottom4') }}"><div id="arrow_down"></div></a>
+    </div>
+{% endblock %}

@@ -1,0 +1,48 @@
+.clear {
+  content: "&nbsp;";
+  float: initial;
+  clear: both;
+  height: 0;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  background-color: #000;
+  color: #b5b6b8;
+  margin: 0;
+}
+
+#wrapper {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 87.5%;
+}
+
+header {
+  margin: 0 7.5%;
+  width: 85%;
+}
+header #logo {
+  background-image:url('../build/images/logo.png');
+  height: 126px;
+  width: 126px;
+}
+header nav {
+  float: right;
+  margin: 135px 0 0;
+}
+header nav > ul {
+  list-style: none;
+}
+header nav > ul li {
+  float: left;
+  font-size: 18px;
+  margin: 0 13px;
+}
+
+/*# sourceMappingURL=app.css.map */

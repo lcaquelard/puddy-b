@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="content" class="{{ current_page }}">
+        <h1>{{ n }} heure{% if n > 1 %}s{% endif %} dans nos bus karaokés</h1>
+        <div class="separator_red_h_line"></div>
+        <h3>{{ 190 + n * 100 }}€ (9 personnes max.)</h3>
+        <div class="separator_red_h_line"></div>
+        <div class="fleft">
+            <div id="karaoke" class="service">
+                <div class="icon"></div>
+                <h4>service karaoké</h4>
+                <p>Puddy-B lance le concept karaoké dans tous ses bus boîte de nuit, soyez prêts à donner de la voix&nbsp;!</p>
+            </div>
+            <div id="chauffeur" class="service">
+                <div class="icon"></div>
+                <h4>chauffeur expert</h4>
+                <p>
+                    Mise à disposition d'un chauffeur expérimenté.<br>
+                    Nos chauffeurs sauront vous conduire en toute sécurité et avec une grande souplesse tout au long de votre parcours.
+                </p>
+            </div>
+            <div id="dj" class="service">
+                <div class="icon"></div>
+                <h4>mise à disposition d'une tablette</h4>
+                <p>Nous vous confions une tablette afin de choisir vous-même vos morceaux !</p>
+            </div>
+            <div id="preparatifs" class="service">
+                <div class="icon"></div>
+                <h4>préparatifs</h4>
+                <p>Mise à disposition du véhicule 30 mn avant le départ pour assurer une mise en place et l'arrivée de vos invités en toute tranquilité.</p>
+            </div>
+            <div id="ecran" class="service">
+                <div class="icon"></div>
+                <h4>écrans à disposition</h4>
+                <p>Diffuser les écrans du bus à votre image&nbsp;!</p>
+            </div>
+            <div id="afficheur" class="service">
+                <div class="icon"></div>
+                <h4>afficheur à disposition</h4>
+                <p>Défilant, clignotant, tombant ou bien fixe, n'hésitez pas à communiquer sur votre événement.</p>
+            </div>
+        </div>
+        <div class="fright">
+            <div id="consommables" class="service">
+                <div class="icon"></div>
+                <h4>consommables</h4>
+                <p>Pour une logistique parfaite, nous vous fournissons tous les consommables sans limite (verres, flûtes, glaçons, serviettes)</p>
+            </div>
+            <div id="boissons" class="service">
+                <div class="icon"></div>
+                <h4>boissons soft à volonté</h4>
+                <p>
+                    Rafraîchissez vous à votre souhait :<br>
+                    L'Aromatisé (jus de pomme, orange), les Bulles (Coca, Fanta, Sprite...), La Pureté (eau plate et gazeuse).
+                </p>
+            </div>
+            <div id="bouchon" class="service">
+                <div class="icon"></div>
+                <h4>aucun droit de bouchon</h4>
+                <p>Apportez vos propres boissons et consommez sans supplément&nbsp;! Aucun frais ne vous sera facturé&nbsp;!</p>
+            </div>
+            <div id="bouche" class="service">
+                <div class="icon"></div>
+                <h4>aucun frais de bouche</h4>
+                <p>Mangez en toute liberté... Apportez vos plateaux ou gâteaux, rien ne vous sera facturé&nbsp;! Vous pouvez également faire appel à votre propre traiteur.</p>
+            </div>
+            <div id="tapis" class="service">
+                <div class="icon"></div>
+                <h4>tapis rouge</h4>
+                <p>Pour honorer vos invités à bord du bus, accueillez les avec un tapis rouge à la montée du bus discothèque. Effet garanti&nbsp;!</p>
+            </div>
+            <div id="offres_optionnelles">
+                <h4>offres optionnelles</h4>
+                <p>Hôtesse-Serveur / Photographe / Service traiteur / Agent</p>
+            </div>
+        </div>
+        <div class="clear">&nbsp;</div>
+        <a href="{{ path('karaoke') }}"><div id="arrow_down"></div></a>
+        <div class="clear">&nbsp;</div>
+    </div>
+{% endblock %}

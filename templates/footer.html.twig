@@ -1,0 +1,25 @@
+{% set aFMenu = {
+    'bottom1'       : 'Les soiréees bus Paris de puddyb.com',
+    'bottom2'       : 'Une soirée bus 100% réussie',
+    'bottom3'       : 'Les bus disco et discobus de Puddy-B',
+    'bottom4'       : 'Organiser son évènement à bord d\'un bus busdiscothèque',
+    'bottom5'       : 'Prix discobus Paris',
+    'bottom6'       : 'Les bus disco parisiens'
+}
+%}
+<footer>
+    <nav>
+        <ul>
+            {% for key, value in aFMenu %}
+                {% if key == nav %}
+                    <li class="active">{{ value }}</li>
+                {% else %}
+                    <li><a href="{{ path(key) }}">{{ value }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <div class="clear"></div>
+    </nav>
+    <div class="h_line_bottom"></div>
+    <p>© 2020 <a href="{{ path('accueil') }}">PUDDY-B</a> by <a href="www.busdiscotheque.com">BUSDISCOTHEQUE.COM</a></p>
+</footer>

@@ -1,0 +1,81 @@
+index:
+    path:    /
+    controller: App\Controller\DefaultController::index
+
+accueil:
+    path:   /accueil
+    controller: App\Controller\DefaultController::accueil
+
+nos_discobus:
+    path:   /nos_discobus
+    controller: App\Controller\DefaultController::nos_discobus
+
+discobus:
+    path:   /nos_discobus/{n}
+    controller: App\Controller\DefaultController::discobus
+    defaults:
+        n: 0
+    requirements:
+        n: '[1-4]'
+discobus_redir:
+    path:   /nos_discobus/{n}
+    controller: App\Controller\DefaultController::nos_discobus
+    defaults:
+        n: 0
+    requirements:
+        n: '\d+'
+
+formules:
+    path:   /formules
+    controller: App\Controller\DefaultController::formules
+
+services:
+    path:   /services/{n}
+    controller: App\Controller\DefaultController::services
+    defaults:
+        n: 0
+    requirements:
+        n: '[1-4]'
+services_redir:
+    path:   /services/{n}
+    controller: App\Controller\DefaultController::services
+    defaults:
+        n: 0
+    requirements:
+        n: '\d+'
+
+karaoke:
+    path:   /karaoke
+    controller: App\Controller\DefaultController::karaoke
+
+en_clair:
+    path:   /en_clair
+    controller: App\Controller\DefaultController::en_clair
+
+contact:
+    path:   /contact
+    controller: App\Controller\DefaultController::contact
+
+bottom1:
+    path:   /soiree-bus-paris-poowood
+    controller: App\Controller\DefaultController::bottom1
+
+bottom2:
+    path:   /soiree-bus-reussie
+    controller: App\Controller\DefaultController::bottom2
+
+bottom3:
+    path:   /bus-disco-discobus-poowood
+    controller: App\Controller\DefaultController::bottom3
+
+bottom4:
+    path:   /organiser-evenement-a-bord-bus-discotheque
+    controller: App\Controller\DefaultController::bottom4
+
+bottom5:
+    path:   /prix-disco
+    controller: App\Controller\DefaultController::bottom5
+
+bottom6:
+    path:   /bus-disco-parisien
+    controller: App\Controller\DefaultController::bottom6

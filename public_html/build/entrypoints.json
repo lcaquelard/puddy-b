@@ -1,0 +1,22 @@
+{
+  "entrypoints": {
+    "poowood": {
+      "js": [
+        "/build/runtime.js",
+        "/build/poowood.js"
+      ],
+      "css": [
+        "/build/poowood.css"
+      ]
+    },
+    "puddyb": {
+      "js": [
+        "/build/runtime.js",
+        "/build/puddyb.js"
+      ],
+      "css": [
+        "/build/puddyb.css"
+      ]
+    }
+  }
+}

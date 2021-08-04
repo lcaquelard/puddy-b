@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="content" class="{{ current_page }}">
+        <div id="contact_info">
+            <h1 class="left">parlons-en ensemble</h1>
+            <div class="separator_red_h_l_line"></div>
+            <h4 class="left">Puddy-B by busdiscothèque</h4>
+            <p>
+                Tel : 01.42.79.85.49<br/>
+                Email : puddybparis@gmail.com<br/>
+                <br/>
+                &Agrave; bientôt à bord des bus<br/>
+                discothèques <span class="bold underline">PUDDY-B</span> !
+            </p>
+        </div>
+        <div id="contact_form">
+            <p>
+                <span class="bold white">N'hésitez plus</span>
+                Envoyez-nous directement vos demandes de devis, vos questions ou vos suggestions afin de mettre votre projet en route !
+            </p>
+            {{ form_start(form) }}
+            {{ form_widget(form.firstname, {'attr': {'placeholder': 'Prénom'}}) }}
+            {{ form_widget(form.lastname, {'attr': {'placeholder': 'Nom'}}) }}
+            {{ form_widget(form.from, {'attr': {'placeholder': 'Email'}}) }}
+            {{ form_widget(form.company, {'attr': {'placeholder': 'Entreprise (facultatif)'}}) }}
+            {{ form_widget(form.message, {'attr': {'placeholder': 'Dites nous tout...'}}) }}
+            <input class="clickbox" type="submit" value="Envoyer" />
+            {{ form_end(form) }}
+        </div>
+        <div class="clear"></div>
+        <a href="{{ path('accueil') }}"><div id="arrow_down"></div></a>
+        <div class="clear"></div>
+    </div>
+{% endblock %}

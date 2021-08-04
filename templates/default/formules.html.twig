@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="head_formules"></div>
+<div id="content" class="{{ current_page }}">
+    <h1>nos soirées en bus discothèques</h1>
+    <div class="separator_red_h_line"></div>
+    <h3>Nos formules vous proposent différentes offres classées par durées</h3>
+    <div class="separator_red_h_line"></div>
+    <div id="frames" class="formules">
+            <div class="frame">
+            <a href="{{ path('services', {n: 1}) }}">
+                <h2>1 heure en bus discothèque</h2>
+                <p class="hover">voir nos prestations</p>
+                <p class="default">Temps restreint, budget serré ?</p>
+                <p>290€ TTC</p>
+            </a>
+        </div>
+        <div class="frame">
+            <a href="{{ path('services', {n: 2}) }}">
+                <h2>2 heures en bus discothèque</h2>
+                <p class="hover">voir nos prestations</p>
+                <p class="default">Juste ce qu'il, faut, ni trop, ni pas assez.</p>
+                <p>390€ TTC</p>
+            </a>
+            </div>
+        <div class="frame">
+            <a href="{{ path('services', {n: 3}) }}">
+                <h2>3 heures en bus discothèque</h2>
+                <p class="hover">voir nos prestations</p>
+                <p class="default">Envie de chanter un peu plus longtemps ?</p>
+                <p>490€ TTC</p>
+            </a>
+            </div>
+        <div class="frame">
+            <a href="{{ path('services', {n: 4}) }}">
+                <h2>4 heures en bus discothèque</h2>
+                <p class="hover">voir nos prestations</p>
+                <p class="default">Plus rien ne peut vous arrêter !</p>
+                <p>590€ TTC</p>
+            </a>
+            </div>
+        <div class="clear"></div>
+    </div>
+    <a href="{{ path('karaoke') }}"><div id="arrow_down"></div></a>
+</div>
+{% endblock %}

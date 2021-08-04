@@ -1,0 +1,41 @@
+{% set aHMenu = {
+    'accueil'       : 'accueil',
+    'nos_discobus'  : 'nos discobus',
+    'formules'      : 'nos formules',
+    'karaoke'       : 'karaoké',
+    'contact'       : 'contact'
+}
+%}
+{#    'en_clair'      : 'en clair',#}
+<header>
+    <div id="header_content">
+        <div id="lang_switch" class="icon"></div>
+        <nav>
+            <ul>
+    {% for key, value in aHMenu %}
+                <li class="{% if key == nav %}active{% endif %}{% if key == 'nos_discobus' or key == 'formules' %} dropdown{% endif %}">
+                    <a href="{{ path(key) }}">{{ value|upper }}</a>
+        {% if key == 'nos_discobus' %}
+                    <div class="dropdown_content">
+                        <div><a href="{{ path('discobus', {n : 1}) }}">Bus 1</a></div>
+                        <div><a href="{{ path('discobus', {n : 2}) }}">Bus 2</a></div>
+                        <div><a href="{{ path('discobus', {n : 3}) }}">Bus 3</a></div>
+                        <div><a href="{{ path('discobus', {n : 4}) }}">Bus 4</a></div>
+                    </div>
+        {% elseif key == 'formules' %}
+                    <div class="dropdown_content">
+                        <div><a href="{{ path('services', {n : 1}) }}">1 heure</a></div>
+                        <div><a href="{{ path('services', {n : 2}) }}">2 heures</a></div>
+                        <div><a href="{{ path('services', {n : 3}) }}">3 heures</a></div>
+                        <div><a href="{{ path('services', {n : 4}) }}">4 heures</a></div>
+                    </div>
+        {% endif %}
+                </li>
+    {% endfor %}
+            </ul>
+            <div class="clear"></div>
+        </nav>
+        <div class="clear">&nbsp;</div>
+    </div>
+    <div class="clear">&nbsp;</div>
+</header>

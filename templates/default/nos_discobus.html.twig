@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div id="content" class="{{ current_page }}">
+    <h1>nos discobus</h1>
+    <div class="separator_red_h_line"></div>
+    <h3>Toujours plus de discobus pour mieux vous satisfaire</h3>
+    <div class="separator_red_h_line"></div>
+    <div id="frames" class="bus">
+        <div class="frame"><a href="{{ path('discobus', {n: 1}) }}"><div></div></a></div>
+        {#<div class="frame"><a href="{{ path('discobus', {n: 2}) }}"><div></div></a></div>
+        <div class="frame"><a href="{{ path('discobus', {n: 3}) }}"><div></div></a></div>
+        <div class="frame"><a href="{{ path('discobus', {n: 4}) }}"><div></div></a></div>#}
+        <div class="clear"></div>
+    </div>
+    <h4><a href="{{ path('formules') }}">découvrez nos formules</a></h4>
+    <a href="{{ path('formules') }}"><div id="arrow_down"></div></a>
+</div>
+{% endblock %}

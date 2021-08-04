@@ -1,0 +1,194 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div id="content" class="{{ current_page }}">
+    <h1>nos soirées en bus discothèques</h1>
+    <div class="separator_red_h_line"></div>
+    <h3>Nos formules vous proposent différentes offres classées par durées</h3>
+    <div class="separator_red_h_line"></div>
+    <div id="watches_row">
+        <div data-id="1" class="watch"></div>
+        <div data-id="2" class="watch"></div>
+        <div data-id="3" class="watch"></div>
+        <div data-id="4" class="watch"></div>
+        <div class="clear">&nbsp;</div>
+    </div>
+    <div class="clear">&nbsp;</div>
+    <a href="{{ path('karaoke') }}"><div id="arrow_down"></div></a>
+</div>
+{% endblock %}
+
+{% block popin %}
+<div id="temps_a_bord_popin_1" class="temps_a_bord popin">
+    <div class="close">X</div>
+    <h2>Formule 01h</h2>
+    <h4>790€ TTC</h4>
+    <div class="fleft">
+        <p class="left bold sans">Ce tarif comprend :</p>
+        <ul class="dashed serif">
+            <li>Service karaoké</li>
+            <li>La mise à disposition du bus 30 minutes avant le départ</li>
+            <li>Un chauffeur expérimenté pour vous faire découvrir Paris autrement</li>
+            <li>Un Dj à votre écoute pour mixer selon vos envies</li>
+            <li>Un accueil Tapis Rouge</li>
+            <li>La personalisation de l'afficheur extérieur pour accueillir vos invités</li>
+            <li>Les boissons softs à volonté : Eaux, jus sodas</li>
+            <li>Les consommables : gobelets, serviettes de table, glaçons et flûtes de champagne</li>
+            <li>La mise à disposition des écrans pour la diffusion de vos photos et vidéos</li>
+            <li>Aucun droit de bouchon :<br>
+            Vous pouvez apporter vos propres boissons</li>
+            <li>Aucun frais de bouche :<br>
+            Vous pouvez faire appel à votre propre traiteur</li>
+        </ul>
+    </div>
+    <div class="fright">
+        <p class="left bold serif">
+            Vous avez choisi :<br>
+            la formule d'une durée de 1 heure.<br>
+            Soit un total de 790€ TTC.
+        </p>
+        <div class="separator_red_h_l_line top"></div>
+        <p class="left bold upper sans">
+            Contactez-nous pour savoir quand ce bus est disponible :
+        </p>
+        <p class="left sans">
+            Tel : 01 42 79 85 49<br>
+            Email : contact@puddyb.com<br>
+            <a href="{{ path('contact') }}" class="underline black">Formulaire de contact</a>
+        </p>
+        <div class="separator_red_h_l_line bot"></div>
+        <p class="left sans">
+            À bientôt à bord des bus discothèques <span class="bold upper underline">puddyb</span> !
+        </p>
+    </div>
+</div>
+<div id="temps_a_bord_popin_2" class="temps_a_bord popin">
+    <div class="close">X</div>
+    <h2>Formule 02h</h2>
+    <h4>890€ TTC</h4>
+    <div class="fleft">
+        <p class="left bold sans">Ce tarif comprend :</p>
+        <ul class="dash_list serif">
+            <li>Service karaoké</li>
+            <li>La mise à disposition du bus 30 minutes avant le départ</li>
+            <li>Un chauffeur expérimenté pour vous faire découvrir Paris autrement</li>
+            <li>Un Dj à votre écoute pour mixer selon vos envies</li>
+            <li>Un accueil Tapis Rouge</li>
+            <li>La personalisation de l'afficheur extérieur pour accueillir vos invités</li>
+            <li>Les boissons softs à volonté : Eaux, jus sodas</li>
+            <li>Les consommables : gobelets, serviettes de table, glaçons et flûtes de champagne</li>
+            <li>La mise à disposition des écrans pour la diffusion de vos photos et vidéos</li>
+            <li>Aucun droit de bouchon :<br>
+            Vous pouvez apporter vos propres boissons</li>
+            <li>Aucun frais de bouche :<br>
+            Vous pouvez faire appel à votre propre traiteur</li>
+        </ul>
+    </div>
+    <div class="fright">
+        <p class="left bold serif">
+            Vous avez choisi :<br>
+            la formule d'une durée de 2 heures.<br>
+            Soit un total de 890€ TTC.
+        </p>
+        <div class="separator_red_h_l_line top"></div>
+        <p class="left bold upper sans">
+            Contactez-nous pour savoir quand ce bus est disponible :
+        </p>
+        <p class="left sans">
+            Tel : 01 42 79 85 49<br>
+            Email : contact@puddyb.com<br>
+            <a href="{{ path('contact') }}" class="underline black">Formulaire de contact</a>
+        </p>
+        <div class="separator_red_h_l_line bot"></div>
+        <p class="left sans">
+            À bientôt à bord des bus discothèques <span class="bold upper underline">puddyb</span> !
+        </p>
+    </div>
+</div>
+<div id="temps_a_bord_popin_3" class="temps_a_bord popin">
+    <div class="close">X</div>
+    <h2>Formule 03h</h2>
+    <h4>990€ TTC</h4>
+    <div class="fleft">
+        <p class="left bold sans">Ce tarif comprend :</p>
+        <ul class="dash_list serif">
+            <li>Service karaoké</li>
+            <li>La mise à disposition du bus 30 minutes avant le départ</li>
+            <li>Un chauffeur expérimenté pour vous faire découvrir Paris autrement</li>
+            <li>Un Dj à votre écoute pour mixer selon vos envies</li>
+            <li>Un accueil Tapis Rouge</li>
+            <li>La personalisation de l'afficheur extérieur pour accueillir vos invités</li>
+            <li>Les boissons softs à volonté : Eaux, jus sodas</li>
+            <li>Les consommables : gobelets, serviettes de table, glaçons et flûtes de champagne</li>
+            <li>La mise à disposition des écrans pour la diffusion de vos photos et vidéos</li>
+            <li>Aucun droit de bouchon :<br>
+            Vous pouvez apporter vos propres boissons</li>
+            <li>Aucun frais de bouche :<br>
+            Vous pouvez faire appel à votre propre traiteur</li>
+        </ul>
+    </div>
+    <div class="fright">
+        <p class="left bold serif">
+            Vous avez choisi :<br>
+            la formule d'une durée de 3 heures.<br>
+            Soit un total de 990€ TTC.
+        </p>
+        <div class="separator_red_h_l_line top"></div>
+        <p class="left bold upper sans">
+            Contactez-nous pour savoir quand ce bus est disponible :
+        </p>
+        <p class="left sans">
+            Tel : 01 42 79 85 49<br>
+            Email : contact@puddyb.com<br>
+            <a href="{{ path('contact') }}" class="underline black">Formulaire de contact</a>
+        </p>
+        <div class="separator_red_h_l_line bot"></div>
+        <p class="left sans">
+            À bientôt à bord des bus discothèques <span class="bold upper underline">puddyb</span> !
+        </p>
+    </div>
+</div>
+<div id="temps_a_bord_popin_4" class="temps_a_bord popin">
+    <div class="close">X</div>
+    <h2>Formule 04h</h2>
+    <h4>1090€ TTC</h4>
+    <div class="fleft">
+        <p class="left bold sans">Ce tarif comprend :</p>
+        <ul class="dash_list serif">
+            <li>Service karaoké</li>
+            <li>La mise à disposition du bus 30 minutes avant le départ</li>
+            <li>Un chauffeur expérimenté pour vous faire découvrir Paris autrement</li>
+            <li>Un Dj à votre écoute pour mixer selon vos envies</li>
+            <li>Un accueil Tapis Rouge</li>
+            <li>La personalisation de l'afficheur extérieur pour accueillir vos invités</li>
+            <li>Les boissons softs à volonté : Eaux, jus sodas</li>
+            <li>Les consommables : gobelets, serviettes de table, glaçons et flûtes de champagne</li>
+            <li>La mise à disposition des écrans pour la diffusion de vos photos et vidéos</li>
+            <li>Aucun droit de bouchon :<br>
+            Vous pouvez apporter vos propres boissons</li>
+            <li>Aucun frais de bouche :<br>
+            Vous pouvez faire appel à votre propre traiteur</li>
+        </ul>
+    </div>
+    <div class="fright">
+        <p class="left bold serif">
+            Vous avez choisi :<br>
+            la formule d'une durée de 4 heures.<br>
+            Soit un total de 1090€ TTC.
+        </p>
+        <div class="separator_red_h_l_line top"></div>
+        <p class="left bold upper sans">
+            Contactez-nous pour savoir quand ce bus est disponible :
+        </p>
+        <p class="left sans">
+            Tel : 01 42 79 85 49<br>
+            Email : contact@puddyb.com<br>
+            <a href="{{ path('contact') }}" class="underline black">Formulaire de contact</a>
+        </p>
+        <div class="separator_red_h_l_line bot"></div>
+        <p class="left sans">
+            À bientôt à bord des bus discothèques <span class="bold upper underline">puddyb</span> !
+        </p>
+    </div>
+</div>
+{% endblock %}

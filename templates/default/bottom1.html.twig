@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="content" class="{{ current_page }}">
+        <h1 class="left">Les soirée bus paris de Puddy-B.com</h1>
+        <div class="separator_grey_h_l_line"></div>
+        <div id="karaoke">
+            <p><a href="{{ path('accueil') }}">Puddy-B</a>, nouvel acteur dans la location de disco bus et l’organisation de soirée bus, s’associe à busdiscotheque pour vous offrir ce qui existe de mieux en termes de location de bus anniversaire.</p>
+            <p>Parce que <a href="http://www.busdiscotheque.com">busdiscotheque</a> est le leader incontestable du marché des soirées bus et l’inventeur du concept de location de bus boite de nuit, Puddy-B a décidé de centraliser ses services avec busdiscotheque pour la location de <a href="{{ path('services') }}">soirée bus à paris</a>. Ainsi, vous aurez toujours plus de choix dans les discobus, et un seul et même interlocuteur pour faciliter les échanges.</p>
+            <p>Puddy-B met donc à l’entière disposition de busdiscotheque ses discobus haut de gamme, tout neufs, intégralement équipés pour votre plus grand confort. Ainsi, busdiscotheque et Puddy-B étoffent leurs offres de soirée bus pour les rendre accessibles à tous.</p>
+            <p>Puddy-B est totalement transparent sur ses offres, ses formules, ses tarifs tous ces points sont consultables sur notre site. Puddy-B, comme busdiscotheque, est jusqu’à 90 % moins cher que les party bus paris, soirée bus paris, stan&walter etc…</p>
+            <p>Vous trouverez toutes les informations sur notre site, toutefois si vous avez une question particulière pour votre soirée bus, si vous avez des besoins spécifiques pour organiser votre anniversaire en bus à Paris ou autre, n’hésitez pas à nous contacter par mail ou téléphone et nous répondrons immédiatement à vos interrogations.</p>
+            <p>Comme les busdisco de busdiscotheque, tous les intérieurs de nos disco bus paris sont totalement repensés et aménagés afin de vous fournir un maximum de services.</p>
+        </div>
+        <a href="{{ path('bottom2') }}"><div id="arrow_down"></div></a>
+    </div>
+{% endblock %}

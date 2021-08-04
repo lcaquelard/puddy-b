@@ -1,0 +1,6 @@
+.svn
+.idea
+.htaccess
+.htpasswd
+.rsyncignore
+.yarn_error.log
