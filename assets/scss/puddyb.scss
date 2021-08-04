@@ -1,15 +1,6 @@
-$darkgrey :#4B4B4D;
-$lightgrey: #B0B0B2;
-$lightgreybg: #D1D2D4;
+$text_color_default:#FFF;
+$bg_color_default:#343434;
 
-$darkred: #540814;
-$lightred: #C11638;
-
-.darkgrey{color:$darkgrey;}
-.lightgrey{color:$lightgrey;}
-
-.darkred{color:$darkred;}
-.lightred{color:$lightred;}
 .fleft {
   float: left;
 }
@@ -51,7 +42,7 @@ $lightred: #C11638;
 }
 
 h1 {
-  color:$lightred;
+  color:$text_color_default;
   font-family: Roboto, Helvetica, monospace;
   font-size: 50px;
   font-weight: 300;
@@ -66,13 +57,17 @@ h1.left {
 }
 
 h2 {
-  color:$lightred;
-  font-family: Roboto, Helvetica, monospace;
-  font-size: 25px;
-  font-weight:normal;
-  margin: 5px 0;
-  text-align: center;
-  text-transform: uppercase;
+  background: -webkit-repeating-linear-gradient(top,hsla(0,0%,100%,0),hsla(0,0%,100%,0) 3%,hsla(0,0%,100%,.1) 4.5%),-webkit-repeating-linear-gradient(top,transparent,transparent 2%,rgba(0,0,0,.03) 2.5%),-webkit-repeating-linear-gradient(top,hsla(0,0%,100%,0),hsla(0,0%,100%,0) .6%,hsla(0,0%,100%,.15) 1.2%),linear-gradient(80deg,#a6a6a6,#d9d9d9 45%,#e0e0e0 55%,#e0e0e0 65%,#d9d9d9 75%,#a6a6a6);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: capitalize;
+  -webkit-text-fill-color: #5a5a5a;
+  color: #5a5a5a;
+  box-shadow: 0 0 10px #000;
+  margin-top: 0;
+  font-family: Playfair Display,serif;
+  text-align:center;
 }
 
 h2.left {
@@ -80,7 +75,7 @@ h2.left {
 }
 
 h3 {
-  color:$lightred;
+  color:$text_color_default;
   font-family: "Playfair Display", serif;
   font-size: 28px;
   font-weight: 500;
@@ -94,7 +89,7 @@ h3.left {
 }
 
 h4 {
-  color:$darkred;
+  color:$text_color_default;
   font-family: Roboto, Helvetica, monospace;
   font-size: 18px;
   font-weight: 500;
@@ -112,32 +107,32 @@ h4.left {
 }
 
 .separator_red_h_line {
-  border-top: $darkred solid 1px;
-  border-bottom: $lightred solid 2px;
+  border-top: $text_color_default solid 1px;
+  border-bottom: $text_color_default solid 2px;
   height: 0;
   margin: 20px auto;
   width: 36px;
 }
 
 .separator_red_h_l_line {
-  border-top: $darkred solid 1px;
-  border-bottom: $lightred solid 2px;
+  border-top: $text_color_default solid 1px;
+  border-bottom: $text_color_default solid 2px;
   height: 0;
   margin: 20px 0;
   width: 36px;
 }
 
 .separator_grey_h_line {
-  border-top: $darkgrey solid 1px;
-  border-bottom: $lightgrey solid 2px;
+  border-top: $text_color_default solid 1px;
+  border-bottom: $text_color_default solid 2px;
   height: 0;
   margin: 20px auto;
   width: 36px;
 }
 
 .separator_grey_h_l_line {
-  border-top: $darkgrey solid 1px;
-  border-bottom: $lightgrey solid 2px;
+  border-top: $text_color_default solid 1px;
+  border-bottom: $text_color_default solid 2px;
   height: 0;
   margin: 20px 0;
   width: 36px;
@@ -145,7 +140,7 @@ h4.left {
 
 .separator_black_h_l_line {
   border-top: #000 solid 1px;
-  border-bottom: $darkgrey solid 1px;
+  border-bottom: $text_color_default solid 1px;
   height: 0;
   margin: 20px 0;
   width: 36px;
@@ -190,8 +185,8 @@ a {
 }
 
 body {
-  background-color: #0A0000;
-  color:$lightgrey;
+  background-color: $bg_color_default;
+  color:$text_color_default;
   font-family: "Roboto Thin", Helvetica, Verdana, monospace;
   font-size: 20px;
   margin: 0;
@@ -205,16 +200,43 @@ body {
 
 header {
   font-family: "Playfair Display", serif;
-  background-image: url("../build/images/logo_puddyb_g.png");
-  background-position: top 30px left 0;
-  background-repeat: no-repeat;
-  background-size: 126px;
   margin: 0;
   width: 100%;
 
+  #head_logo{
+    background-image: url("../build/images/logo_puddyb_g.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:66px;
+    width:100%;
+    margin:30px auto 0;
+    padding: 0 0 25px;
+    border-bottom: #FFF solid 1px;
+
+    p{
+      background-position:left center;
+      background-repeat:no-repeat;
+      background-size:contain;
+      padding: 0 0px 0 40px;
+      margin: 10px 0;
+      height: 26px;
+      line-height: 30px;
+      font-size: 15px;
+    }
+
+    p:first-of-type{
+      background-image: url("../build/images/phone.png");
+    }
+
+    p:last-of-type{
+      background-image: url("../build/images/mail.png");
+    }
+  }
+
   #header_content {
     float: right;
-    margin: 115px 9.5% 11px 0;
+    margin: 40px 20% 10px 0;
 
     .icon {
       float: right;
@@ -263,7 +285,7 @@ header {
         }
 
         li.active {
-          color:$lightred;
+          color:$text_color_default;
           text-decoration: underline;
         }
       }
@@ -295,7 +317,7 @@ header {
   background-image: url("../build/images/h_line.png");
   background-repeat: repeat-y;
   background-size: 100%;
-  box-shadow: 10vw -28px 50px 3px #F00, -10vw -29px 50px 3px #F00;
+  //box-shadow: 10vw -28px 50px 3px #F00, -10vw -29px 50px 3px #F00;
   height: 1px;
   position:absolute;
   left:0;
@@ -365,7 +387,7 @@ header {
   text-transform: uppercase;
   z-index:1002;
   span {
-    color:$lightred;
+    color:$text_color_default;
   }
 }
 .popin{
@@ -547,7 +569,7 @@ header {
   div.frame:hover{
     a {
       div{
-        background-color: $darkred;
+        background-color: $text_color_default;
       }
     }
   }
@@ -721,7 +743,7 @@ footer {
     background-image: url("../build/images/h_line.png");
     background-repeat: repeat-y;
     background-size: 100%;
-    box-shadow: 10vw -28px 50px 3px #F00, -10vw -29px 50px 3px #F00;
+    //box-shadow: 10vw -28px 50px 3px #F00, -10vw -29px 50px 3px #F00;
     height: 1px;
     margin: 15px 0 0;
     position:absolute;
