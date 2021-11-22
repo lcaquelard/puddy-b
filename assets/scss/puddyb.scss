@@ -718,43 +718,23 @@ header {
 }
 
 footer {
-  nav {
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-
-    ul {
-      list-style: none;
-
-      li {
-        border-left: #444 solid 1px;
-        float: left;
-        font-size: 11px;
-        padding: 0 8px;
-      }
-
-      li:first-of-type {
-        border-left: none;
-      }
+  display:flex;
+  > div{
+      margin: 0 8%;
+      text-align: center;
+      width: 300px;
+    h2 {
+      background: none;
+      text-transform: none;
+      box-shadow: none;
+      color: #FFF;
+      -webkit-text-fill-color: initial;
     }
   }
-
-  .h_line_bottom {
-    background-image: url("../build/images/h_line.png");
-    background-repeat: repeat-y;
-    background-size: 100%;
-    //box-shadow: 10vw -28px 50px 3px #F00, -10vw -29px 50px 3px #F00;
-    height: 1px;
-    margin: 15px 0 0;
-    position:absolute;
-    left:0;
-    width: 100%;
-  }
-
-  p {
-    font-size: 15px;
-    margin: 15px 9.5%;
-    text-align: center;
-    width: 81%;
+  @media (max-width: 600px){
+    display:block;
+    > div{
+      margin:15px auto;
+    }
   }
 }

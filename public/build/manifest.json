@@ -1,8 +1,8 @@
 {
-  "build/app.css": "/build/app.css",
-  "build/app.js": "/build/app.js",
-  "build/runtime.js": "/build/runtime.js",
-  "build/vendors~app.js": "/build/vendors~app.js",
+  "build/0.f43a4341.js": "/build/0.f43a4341.js",
+  "build/app.css": "/build/app.264333bf.css",
+  "build/app.js": "/build/app.4fde59a3.js",
+  "build/runtime.js": "/build/runtime.d94b3b43.js",
   "build/images/ajax-loader.gif": "/build/images/ajax-loader.fb6f3c23.gif",
   "build/images/arrow_down.png": "/build/images/arrow_down.e19920dd.png",
   "build/images/arrow_left.png": "/build/images/arrow_left.1353a837.png",
